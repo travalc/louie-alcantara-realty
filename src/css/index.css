@@ -1,0 +1,26 @@
+body {
+  margin: 0; }
+
+.TopSection {
+  position: relative; }
+  .TopSection img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s; }
+  .TopSection .img-loaded {
+    opacity: 1; }
+  .TopSection .image {
+    opacity: 0; }
+  .TopSection #FirstImage {
+    z-index: -2; }
+  .TopSection #SecondImage {
+    z-index: -1; }
+  .TopSection h1 {
+    color: black;
+    z-index: 1;
+    font-size: 60px;
+    position: absolute;
+    transition: opacity 1s; }
+
+/*# sourceMappingURL=index.css.map */

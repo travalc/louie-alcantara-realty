@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+.TopSection {
+  position: relative;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+  }
+  .img-loaded {
+    opacity: 1;
+  }
+
+  .image {
+    opacity: 0;
+  }
+  #FirstImage {
+    z-index: -2;
+  }
+  #SecondImage {
+    z-index: -1
+  }
+  h1 {
+    color: black;
+    z-index: 1;
+    font-size: 60px;
+    position: absolute;
+    transition: opacity 1s;
+  }
+}
