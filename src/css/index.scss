@@ -115,7 +115,7 @@ body {
   }
 }
 
-//Main
+//Slideshow
 .Slideshow {
   position: relative;
   img {
@@ -148,4 +148,19 @@ body {
     position: absolute;
     transition: opacity 1.5s;
   }
+}
+
+//MainContent
+
+.MainContent {
+  .Profile { //Profile component
+    text-align: center;
+    margin-top: 5%;
+    .img-louie {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+    }
+  }
+
 }

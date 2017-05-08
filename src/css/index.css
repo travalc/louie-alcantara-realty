@@ -88,4 +88,12 @@ body {
     position: absolute;
     transition: opacity 1.5s; }
 
+.MainContent .Profile {
+  text-align: center;
+  margin-top: 5%; }
+  .MainContent .Profile .img-louie {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px; }
+
 /*# sourceMappingURL=index.css.map */
