@@ -90,10 +90,17 @@ body {
 
 .MainContent .Profile {
   text-align: center;
-  margin-top: 2%; }
+  margin: 2%; }
   .MainContent .Profile .img-louie {
     border-radius: 50%;
     height: 200px;
     width: 200px; }
+  .MainContent .Profile .about-louie {
+    font-family: 'Lustria', serif;
+    line-height: 150%;
+    font-size: 20px;
+    color: #1f2328;
+    font-weight: 10;
+    letter-spacing: 1px; }
 
 /*# sourceMappingURL=index.css.map */
