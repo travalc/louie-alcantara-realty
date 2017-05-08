@@ -133,16 +133,19 @@ body {
     opacity: 0;
   }
   #FirstImage {
-    z-index: -2;
+    z-index: -1;
   }
   #SecondImage {
-    z-index: -1
+    z-index: -2;
+  }
+  #ThirdImage {
+    z-index: -3;
   }
   h1 {
     color: white;
     z-index: 1;
     font-size: 60px;
     position: absolute;
-    transition: opacity 1s;
+    transition: opacity 1.5s;
   }
 }
