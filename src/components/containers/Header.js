@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class TopSection extends Component {
+class Header extends Component {
   render() {
     return (
-      <div className="TopSection">
+      <div className="Header">
         <span className="name-plate">Louie Alcantara Realty</span>
         <div className="contact-plate">
           <span className="phone">Phone: (702) 300 - 3677</span>
@@ -14,4 +14,4 @@ class TopSection extends Component {
   }
 }
 
-export default TopSection;
+export default Header;
