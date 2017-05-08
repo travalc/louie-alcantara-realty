@@ -52,7 +52,7 @@ class Slideshow extends Component {
       <div className="Slideshow" style={{width: '100%', height: '600px'}}>
         <img className={this.state.classOne} id="FirstImage" src='http://www.thewallofchampions.com/wp-content/uploads/2013/04/2101.jpg' />
         <img className={this.state.classTwo} id="SecondImage" src="http://www.davidmarquardtphotography.com/dm-old/wp-content/uploads/2011/11/Residential-Exterior-1.jpg" />
-        <img className={this.state.classThree} id="ThirdImage" src='http://www.lynamlaw.com/wp-content/uploads/2014/12/handshake.jpg' />
+        <img className={this.state.classThree} id="ThirdImage" src='https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAsEAAAAJDU4MThhMTdiLTIxY2QtNGY3Ni1iMzI1LTVlN2Y1OWExMGJkMA.jpg' />
       </div>
     )
   }
