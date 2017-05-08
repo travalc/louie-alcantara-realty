@@ -157,18 +157,23 @@ body {
   .Profile { //Profile component
     text-align: center;
     margin: 2%;
+    font-family: 'Lustria', serif;
+    line-height: 150%;
+    font-size: 20px;
+    color: #1f2328;
+    font-weight: 10;
+    letter-spacing: 1px;
     .img-louie {
       border-radius: 50%;
       height: 200px;
       width: 200px;
     }
-    .about-louie {
-      font-family: 'Lustria', serif;
-      line-height: 150%;
-      font-size: 20px;
-      color: #1f2328;
-      font-weight: 10;
-      letter-spacing: 1px;
+    .career-highlights {
+      margin-top: 10%;
+      ul {
+        text-align: left;
+        line-height: 200%;
+      }
     }
   }
 
