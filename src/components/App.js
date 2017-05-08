@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './containers/Header';
 import Slideshow from './containers/Slideshow';
 import MainContent from './containers/MainContent';
+import Footer from './containers/Footer';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <Header />
         <Slideshow />
         <MainContent />
+        <Footer />
       </div>
     )
   }

@@ -40,6 +40,7 @@ $large-min-width: 1300px;
 
 body {
   margin: 0;
+  padding: 0;
 
 }
 
@@ -154,15 +155,15 @@ body {
 //MainContent
 
 .MainContent {
+  text-align: center;
+  font-family: 'Lustria', serif;
+  line-height: 150%;
+  font-size: 20px;
+  color: #1f2328;
+  font-weight: 10;
+  letter-spacing: 1px;
   .Profile { //Profile component
-    text-align: center;
     margin: 2%;
-    font-family: 'Lustria', serif;
-    line-height: 150%;
-    font-size: 20px;
-    color: #1f2328;
-    font-weight: 10;
-    letter-spacing: 1px;
     .img-louie {
       border-radius: 50%;
       height: 200px;
@@ -176,5 +177,14 @@ body {
       }
     }
   }
+  .Testimonials {
+    margin-top: 10%;
+    width: 100%;
+  }
+}
 
+//Footer
+
+.Footer {
+  background-color: black;
 }
