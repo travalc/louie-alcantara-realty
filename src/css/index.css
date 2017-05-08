@@ -1,23 +1,86 @@
+/* Media Queries */
 body {
   margin: 0; }
 
 .TopSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+  background-color: black; }
+  @media (max-width: 450px) {
+    .TopSection {
+      height: 100px; } }
+  .TopSection .name-plate {
+    font-family: 'Pinyon Script', cursive;
+    color: #c8ce23;
+    margin-top: 0; }
+    @media (min-width: 451px) {
+      .TopSection .name-plate {
+        font-size: 40px;
+        margin-left: 15px;
+        float: left; } }
+    @media (min-width: 451px) and (max-width: 775px) {
+      .TopSection .name-plate {
+        font-size: 30px; } }
+    @media (max-width: 450px) {
+      .TopSection .name-plate {
+        text-align: center;
+        margin-left: 12%;
+        font-size: 35px; } }
+  .TopSection .contact-plate {
+    position: relative; }
+    @media (min-width: 451px) {
+      .TopSection .contact-plate {
+        width: 60%;
+        float: right;
+        height: 100%; } }
+    @media (max-width: 450px) {
+      .TopSection .contact-plate {
+        text-align: center; } }
+    .TopSection .contact-plate .phone, .TopSection .contact-plate .email {
+      font-family: 'Playfair Display SC', serif;
+      color: white; }
+      @media (min-width: 451px) {
+        .TopSection .contact-plate .phone, .TopSection .contact-plate .email {
+          position: absolute;
+          bottom: 0; } }
+      @media (min-width: 451px) and (max-width: 775px) {
+        .TopSection .contact-plate .phone, .TopSection .contact-plate .email {
+          font-size: 12px; } }
+      @media (max-width: 450px) {
+        .TopSection .contact-plate .phone, .TopSection .contact-plate .email {
+          display: block; } }
+    .TopSection .contact-plate .email {
+      right: 20px; }
+    .TopSection .contact-plate .phone {
+      right: 350px; }
+      @media (min-width: 451px) and (max-width: 775px) {
+        .TopSection .contact-plate .phone {
+          right: 300px; } }
+
+.MainContent {
   position: relative; }
-  .TopSection img {
+  .MainContent img {
     position: absolute;
     width: 100%;
-    height: 100%;
-    transition: opacity 1s; }
-  .TopSection .img-loaded {
+    height: 101%;
+    transition: opacity 1s;
+    image-rendering: pixelated; }
+  .MainContent .img-loaded {
     opacity: 1; }
-  .TopSection .image {
+  .MainContent .image {
     opacity: 0; }
-  .TopSection #FirstImage {
+  .MainContent #FirstImage {
     z-index: -2; }
-  .TopSection #SecondImage {
+  .MainContent #SecondImage {
     z-index: -1; }
-  .TopSection h1 {
-    color: black;
+  .MainContent h1 {
+    color: white;
     z-index: 1;
     font-size: 60px;
     position: absolute;

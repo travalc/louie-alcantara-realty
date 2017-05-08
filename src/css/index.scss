@@ -1,13 +1,129 @@
+//media queries
+
+$smartphone-max-width: 450px;
+$tablet-max-width: 775px;
+$desktop-min-width: 776px;
+$large-min-width: 1300px;
+
+/* Media Queries */
+@mixin smartphone {
+  @media (max-width: #{$smartphone-max-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$smartphone-max-width + 1px}) and (max-width: #{$tablet-max-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-min-width}) {
+    @content;
+  }
+}
+
+@mixin tabletAndDesktop {
+  @media (min-width:#{$smartphone-max-width + 1px}) {
+    @content;
+  }
+}
+
+@mixin largeScreen {
+  @media (min-width: $large-min-width) {
+    @content;
+  }
+}
+
+//index
+
 body {
   margin: 0;
 }
-.TopSection {
+
+//header
+
+.TopSection{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  @include smartphone {
+    height: 100px;
+  }
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+  background-color: black;
+
+  .name-plate {
+    font-family: 'Pinyon Script', cursive;
+    color: #c8ce23;
+    margin-top: 0;
+    @include tabletAndDesktop {
+      font-size: 40px;
+      margin-left: 15px;
+      float: left;
+    }
+    @include tablet {
+      font-size: 30px;
+    }
+    @include smartphone {
+      text-align: center;
+      margin-left: 12%;
+      font-size: 35px;
+    }
+  }
+
+  .contact-plate {
+    position: relative;
+    @include tabletAndDesktop {
+      width: 60%;
+      float: right;
+      height: 100%;
+    }
+    @include smartphone {
+      text-align: center;
+    }
+
+    .phone, .email {
+      font-family: 'Playfair Display SC', serif;
+      color: white;
+      @include tabletAndDesktop {
+        position: absolute;
+        bottom: 0;
+      }
+      @include tablet {
+        font-size: 12px;
+      }
+      @include smartphone {
+        display: block;
+      }
+    }
+    .email {
+      right: 20px;
+
+    }
+    .phone {
+      right: 350px;
+      @include tablet {
+        right: 300px;
+      }
+    }
+  }
+}
+
+//Main
+.MainContent {
   position: relative;
   img {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 101%;
     transition: opacity 1s;
+    image-rendering: pixelated;
   }
   .img-loaded {
     opacity: 1;
@@ -23,7 +139,7 @@ body {
     z-index: -1
   }
   h1 {
-    color: black;
+    color: white;
     z-index: 1;
     font-size: 60px;
     position: absolute;
