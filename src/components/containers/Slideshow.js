@@ -40,7 +40,7 @@ class Slideshow extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(this.imageChange, 6000);
+    this.interval = setInterval(this.imageChange, 3000);
   }
   componentWillUnmount() {
     clearInterval(this.interval);

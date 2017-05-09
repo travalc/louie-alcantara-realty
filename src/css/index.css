@@ -110,13 +110,26 @@ body {
         line-height: 200%; }
   .MainContent .Testimonials {
     margin-top: 10%;
+    margin-bottom: 10%;
     width: 100%; }
-  .MainContent .testimonial-one, .MainContent .testimonial-two {
-    text-align: left;
-    padding-left: 20%;
-    padding-right: 20%; }
+    .MainContent .Testimonials .quotes {
+      margin-left: 7%; }
+      @media (min-width: 776px) {
+        .MainContent .Testimonials .quotes {
+          display: flex; }
+          .MainContent .Testimonials .quotes .testimonial-one, .MainContent .Testimonials .quotes .testimonial-two {
+            width: 500px;
+            height: 40%; }
+          .MainContent .Testimonials .quotes .testimonial-two {
+            margin-left: 7%; } }
+      .MainContent .Testimonials .quotes .testimonial-one, .MainContent .Testimonials .quotes .testimonial-two {
+        display: block;
+        text-align: left; }
 
 .Footer {
-  background-color: black; }
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  height: 20px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -179,17 +179,36 @@ body {
   }
   .Testimonials {
     margin-top: 10%;
+    margin-bottom: 10%;
     width: 100%;
+    .quotes {
+      margin-left: 7%;
+      @include desktop {
+        display: flex;
+        .testimonial-one, .testimonial-two {
+          width: 500px;
+          height: 40%;
+        }
+        .testimonial-two {
+          margin-left: 7%;
+        }
+      }
+      .testimonial-one, .testimonial-two {
+        display: block;
+        text-align: left;
+      }
+    }
+
+
   }
-  .testimonial-one, .testimonial-two {
-    text-align: left;
-    padding-left: 20%;
-    padding-right: 20%;
-  }
+
 }
 
 //Footer
 
 .Footer {
   background-color: black;
+  position: fixed;
+  bottom: 0;
+  height: 20px;
 }
