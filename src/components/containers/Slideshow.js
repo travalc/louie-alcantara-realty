@@ -40,7 +40,7 @@ class Slideshow extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(this.imageChange, 3000);
+    this.interval = setInterval(this.imageChange, 6000);
   }
   componentWillUnmount() {
     clearInterval(this.interval);
@@ -48,11 +48,24 @@ class Slideshow extends Component {
 
   render() {
     console.log(this.state.currentBackground);
+    console.log(this);
     return (
       <div className="Slideshow" style={{width: '100%', height: '650px'}}>
-        <img className={this.state.classOne} id="FirstImage" src='http://www.thewallofchampions.com/wp-content/uploads/2013/04/2101.jpg' />
-        <img className={this.state.classTwo} id="SecondImage" src="http://www.davidmarquardtphotography.com/dm-old/wp-content/uploads/2011/11/Residential-Exterior-1.jpg" />
-        <img className={this.state.classThree} id="ThirdImage" src='https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAsEAAAAJDU4MThhMTdiLTIxY2QtNGY3Ni1iMzI1LTVlN2Y1OWExMGJkMA.jpg' />
+        <div className={this.state.classOne} id="FirstImage">
+          <h1 className="moving-text-one">Serving Las Vegas For Over 15 Years</h1>
+          <img  src='http://www.thewallofchampions.com/wp-content/uploads/2013/04/2101.jpg' />
+        </div>
+        <div className={this.state.classTwo} id="SecondImage">
+          <h1 className="moving-text-two">Buy, Sell, Or Retain Your Home</h1>
+          <img  src="http://www.davidmarquardtphotography.com/dm-old/wp-content/uploads/2011/11/Residential-Exterior-1.jpg" />
+        </div>
+        <div className={this.state.classThree} id="ThirdImage">
+          <h1 className="moving-text-three">A Partner You Can Trust</h1>
+          <img  src='https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAsEAAAAJDU4MThhMTdiLTIxY2QtNGY3Ni1iMzI1LTVlN2Y1OWExMGJkMA.jpg' />
+        </div>
+
+
+
       </div>
     )
   }

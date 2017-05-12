@@ -5,7 +5,7 @@ import Testimonials from '../children/Testimonials';
 class MainContent extends Component {
   render() {
     return (
-      <div className="MainContent" style={{backgroundColor:'white', width: '100%', height: '1400px'}}>
+      <div className="MainContent" style={{backgroundColor:'white', width: '100%', height: '1200px'}}>
         <Profile />
         <Testimonials />
       </div>
