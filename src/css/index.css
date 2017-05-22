@@ -17,7 +17,6 @@ body {
     .Header {
       height: 100px; } }
   .Header .name-plate {
-    font-family: 'Pinyon Script', cursive;
     color: #c8ce23;
     margin-top: 0; }
     @media (min-width: 451px) {
@@ -27,12 +26,12 @@ body {
         float: left; } }
     @media (min-width: 451px) and (max-width: 775px) {
       .Header .name-plate {
-        font-size: 30px; } }
+        font-size: 22px; } }
     @media (max-width: 450px) {
       .Header .name-plate {
         text-align: center;
-        margin-left: 12%;
-        font-size: 35px; } }
+        margin-left: 14%;
+        font-size: 23px; } }
   .Header .contact-plate {
     position: relative; }
     @media (min-width: 451px) {
@@ -169,6 +168,12 @@ body {
       .MainContent .Testimonials .quotes .testimonial-one, .MainContent .Testimonials .quotes .testimonial-two {
         display: block;
         text-align: left; }
+
+.Logos .logo-img {
+  border: none;
+  margin: 5%; }
+.Logos .logo-img-2 {
+  margin-bottom: 6%; }
 
 .Footer {
   background-color: black;
